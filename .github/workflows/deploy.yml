@@ -9,6 +9,7 @@ jobs:
     - name: Installing packages
       run: yarn
     - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@2.0.3
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: master # The branch the action should deploy from.
