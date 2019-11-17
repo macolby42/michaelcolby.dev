@@ -2,7 +2,7 @@
   "name": "michaelcolby.dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "michaelcolby.dev",
+  "homepage": "/",
   "dependencies": {
     "eslint": "^6.6.0",
     "gh-pages": "^2.1.1",
