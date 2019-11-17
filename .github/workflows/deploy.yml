@@ -13,5 +13,5 @@ jobs:
       run: yarn
     - name: Building and deploying
       env:
-          EMAIL: macolby42@students.tnech.edu
+          EMAIL: macolby42@students.tntech.edu
       run: yarn deploy
