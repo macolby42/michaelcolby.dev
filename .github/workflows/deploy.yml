@@ -9,9 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        yarn
-        yarn deploy
+    - name: Setting environment variables
+      env:
+        EMAIL: macolby42@students.tnech.edu 
+    - name: Installing packages
+      run: yarn
+    - name: Building and deploying
+      run: yarn deploy
