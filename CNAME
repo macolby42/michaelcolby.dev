@@ -1,0 +1,9 @@
+
+; <<>> DiG 9.10.6 <<>> WWW.MICHAELCOLBY.DEV +nostats +nocomments +nocmd
+;; global options: +cmd
+;WWW.MICHAELCOLBY.DEV.		IN	A
+WWW.MICHAELCOLBY.DEV.	1798	IN	CNAME	macolby42.github.io.
+macolby42.github.io.	3599	IN	A	185.199.109.153
+macolby42.github.io.	3599	IN	A	185.199.111.153
+macolby42.github.io.	3599	IN	A	185.199.110.153
+macolby42.github.io.	3599	IN	A	185.199.108.153
