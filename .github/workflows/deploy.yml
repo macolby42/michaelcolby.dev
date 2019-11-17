@@ -9,10 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Setting environment variables
-      env:
-        EMAIL: macolby42@students.tnech.edu 
     - name: Installing packages
       run: yarn
     - name: Building and deploying
+      env:
+          EMAIL: macolby42@students.tnech.edu
       run: yarn deploy
