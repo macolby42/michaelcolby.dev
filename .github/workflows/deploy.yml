@@ -1,17 +1,17 @@
-name: CI
-
+name: Build and Deploy
 on: [push]
-
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Installing packages
       run: yarn
-    - name: Building and deploying
+    - name: Build and Deploy
       env:
-          EMAIL: macolby42@students.tntech.edu
-      run: yarn deploy
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: master # The branch the action should deploy from.
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: build # The folder the action should deploy.
+      run: yarn build
