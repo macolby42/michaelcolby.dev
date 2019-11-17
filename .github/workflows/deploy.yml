@@ -6,8 +6,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-    - name: Installing packages
-      run: yarn
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@2.0.3
       env:
@@ -15,4 +13,4 @@ jobs:
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: build # The folder the action should deploy.
-      run: yarn build
+        BUILD_SCRIPT: yarn && yarn build
