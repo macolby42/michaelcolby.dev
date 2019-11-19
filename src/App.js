@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Nothing from './components/Nothing';
 
 function App() {
     return (
         <div className="App">
-            <p>hoopla!</p>
+            <Nothing/>
         </div>
     );
 }
