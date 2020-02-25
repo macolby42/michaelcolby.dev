@@ -1,2 +1,0 @@
-# michaelcolby.dev
-my site
